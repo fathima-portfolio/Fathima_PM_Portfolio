@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fathima Babuji | Technical Product Manager</title>
+<meta name="description" content="Fathima Babuji: technical product manager with 12+ years building and leading iOS products used by 100,000+ people. Case studies, experience and resume.">
+<meta property="og:title" content="Fathima Babuji | Technical Product Manager">
+<meta property="og:description" content="12+ years building and leading iOS products. Product case studies, experience and resume.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312203A'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='white' font-family='Georgia,serif' font-weight='bold'%3EFB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3F5F8; --surface:#FFFFFF; --ink:#12203A; --muted:#47536A;
+  --line:#D5DBE5; --teal:#0B6B64; --teal-soft:#DDF0ED; --amber:#E8A317;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6}
+a{color:var(--teal);text-underline-offset:3px}
+a:hover{color:var(--ink)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0;color:var(--ink)}
+h1{font-size:clamp(2.1rem,4.6vw,3.3rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:.5rem}
+h3{font-size:1.45rem}
+p{margin:0 0 1rem}
+.lede{font-size:1.15rem;color:var(--muted);max-width:60ch}
+
+/* top bar */
+.top{border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:5}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.brand{font-family:var(--serif);font-weight:600;font-size:1.2rem;color:var(--ink);text-decoration:none}
+.top nav a{margin-left:22px;color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+.top nav a:hover{text-decoration:underline}
+
+/* hero */
+.hero{padding:64px 0 56px;background-image:radial-gradient(#C9D1DE 1px,transparent 1px);background-size:22px 22px;background-position:0 0}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{margin:0 0 20px}
+.proof{margin:24px 0 28px;padding:0;list-style:none;color:var(--muted);font-size:1rem}
+.proof li{padding:6px 0;border-top:1px solid var(--line)}
+.proof li:last-child{border-bottom:1px solid var(--line)}
+.proof b{color:var(--ink);font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 18px;border-radius:6px;font-weight:600;font-size:.97rem;text-decoration:none;border:2px solid var(--ink)}
+.btn.primary{background:var(--ink);color:#fff}
+.btn.primary:hover{background:var(--teal);border-color:var(--teal);color:#fff}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+
+/* funnel */
+.funnel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px 24px 20px}
+.funnel h2{font-size:1.2rem;margin:0 0 4px}
+.funnel .sub{color:var(--muted);font-size:.92rem;margin-bottom:16px}
+.funnel ol{list-style:none;margin:0;padding:0}
+.funnel li{display:grid;grid-template-columns:150px 1fr 38px;align-items:center;gap:10px;padding:5px 0;font-size:.9rem}
+.funnel .track{height:20px;background:var(--paper);border-radius:3px;overflow:hidden}
+.funnel .bar{display:block;height:100%;width:calc(var(--v)*1%);background:var(--teal);transform-origin:left;animation:grow .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i)*.09s)}
+.funnel li.cliff .bar{background:var(--amber)}
+.funnel li.cliff{font-weight:600}
+.funnel .val{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.funnel .note{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.funnel .note strong{color:var(--ink)}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* sections */
+section{padding:64px 0;border-top:1px solid var(--line)}
+.head{margin-bottom:32px}
+.head p{color:var(--muted);max-width:62ch;margin:0}
+
+/* porter featured */
+.case{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:32px;margin-bottom:28px}
+.tag{display:inline-block;font-size:.85rem;font-weight:600;color:var(--teal);background:var(--teal-soft);padding:3px 10px;border-radius:99px;margin-bottom:12px}
+.case h3{margin-bottom:6px}
+.case .kind{color:var(--muted);margin-bottom:20px}
+.case .cols{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+dl{margin:0}
+dt{font-weight:600;margin-top:16px;color:var(--ink)}
+dd{margin:2px 0 0;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+details{margin-top:22px;border-top:1px solid var(--line);padding-top:14px}
+summary{cursor:pointer;font-weight:600}
+details object{width:100%;height:560px;margin-top:14px;border:1px solid var(--line);border-radius:6px}
+.fallback{padding:16px;color:var(--muted)}
+
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.small{border-left:4px solid var(--teal);padding:4px 0 4px 22px}
+.small .tag{background:transparent;padding:0;color:var(--muted);font-weight:500}
+.small h3{font-size:1.3rem;margin-bottom:10px}
+
+/* shipped */
+.shipped{list-style:none;margin:0;padding:0}
+.shipped li{display:grid;grid-template-columns:240px 1fr;gap:24px;padding:18px 0;border-top:1px solid var(--line)}
+.shipped li:last-child{border-bottom:1px solid var(--line)}
+.shipped h3{font-size:1.25rem}
+.shipped p{margin:0;color:var(--muted)}
+
+/* about + approach */
+.two{display:grid;grid-template-columns:1.1fr 1fr;gap:48px}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;margin:0;padding:0;list-style:none}
+.skills b{display:block}
+.skills span{color:var(--muted);font-size:.95rem}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.steps li{counter-increment:s;border-top:3px solid var(--ink);padding-top:12px}
+.steps li::before{content:counter(s);font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--teal)}
+.steps h3{font-size:1.2rem;margin:2px 0 6px}
+.steps p{color:var(--muted);font-size:.97rem;margin:0}
+
+
+/* technical depth */
+.tech{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.tech div{padding:20px 0;border-top:1px solid var(--line)}
+.tech h3{font-size:1.25rem;margin-bottom:4px}
+.tech p{margin:0;color:var(--muted)}
+.tech b{color:var(--ink);font-weight:600}
+
+/* experience */
+.xp{list-style:none;margin:0;padding:0}
+.xp>li{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line)}
+.xp>li:last-child{border-bottom:1px solid var(--line)}
+.xp .when{color:var(--muted);font-size:.95rem}
+.xp h3{font-size:1.3rem}
+.xp .org{color:var(--muted);margin:2px 0 10px}
+.xp ul{margin:0;padding-left:1.1rem;color:var(--muted)}
+.xp ul li{padding:2px 0}
+
+/* skills + facts */
+.skillgrid{display:grid;grid-template-columns:240px 1fr;gap:0 24px;margin:0}
+.skillgrid dt{margin:0;padding:10px 0;border-top:1px solid var(--line)}
+.skillgrid dd{margin:0;padding:10px 0;border-top:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.facts h3{font-size:1.25rem;margin-bottom:8px}
+.facts p,.facts li{color:var(--muted)}
+.facts ul{margin:0;padding-left:1.1rem}
+.facts li{margin-bottom:8px}
+
+footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);font-size:.92rem}
+.contact h2{margin-bottom:10px}
+
+@media (max-width:860px){
+  .hero .wrap,.two,.pair,.case .cols,.tech,.facts{grid-template-columns:1fr}
+  .xp>li,.skillgrid{grid-template-columns:1fr;gap:4px}
+  .skillgrid dd{border-top:0;padding-top:0}
+  .steps{grid-template-columns:1fr 1fr}
+  .shipped li{grid-template-columns:1fr;gap:4px}
+  .case{padding:22px}
+  .top nav a{margin-left:14px}
+}
+@media (max-width:480px){
+  .funnel li{grid-template-columns:110px 1fr 34px;font-size:.82rem}
+  .steps,.skills{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .funnel .bar{animation:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Fathima Babuji</a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="Fathima_Babuji_Resume.pdf">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Technical product manager with 12 years of building iOS products.</h1>
+      <p class="lede">I have led mobile teams from discovery to launch, with hands-on depth in APIs, performance and release quality. I am moving into product management, and I am Airtribe-certified as a GenAI Product Manager.</p>
+      <ul class="proof">
+        <li><b>100,000+ users</b> reached by iOS products I built and led</li>
+        <li><b>+35% retention</b> in 24 months on a B2B product (Smacar)</li>
+        <li><b>97% crash-free</b> for 3 years (Virtusa)</li>
+      </ul>
+      <div class="btns">
+        <a class="btn primary" href="Fathima_Babuji_Resume.pdf">Resume (PDF)</a>
+        <a class="btn ghost" href="#work">Case studies</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/fathima-babuji-a22aba380/">LinkedIn</a>
+      </div>
+    </div>
+
+    <figure class="funnel" style="margin:0" aria-labelledby="fh">
+      <h2 id="fh">Where first-time Porter users drop off</h2>
+      <p class="sub">Share of users still going at each step (%)</p>
+      <ol>
+        <li style="--v:100;--i:0"><span>Open app</span><span class="track"><span class="bar"></span></span><span class="val">100</span></li>
+        <li style="--v:88;--i:1"><span>Enter pickup and drop</span><span class="track"><span class="bar"></span></span><span class="val">88</span></li>
+        <li class="cliff" style="--v:55;--i:2"><span>Select vehicle</span><span class="track"><span class="bar"></span></span><span class="val">55</span></li>
+        <li style="--v:47;--i:3"><span>View fare estimate</span><span class="track"><span class="bar"></span></span><span class="val">47</span></li>
+        <li style="--v:44;--i:4"><span>Confirm and book</span><span class="track"><span class="bar"></span></span><span class="val">44</span></li>
+        <li style="--v:41;--i:5"><span>Trip completed</span><span class="track"><span class="bar"></span></span><span class="val">41</span></li>
+      </ol>
+      <figcaption class="note"><strong>The biggest drop is 33 points, at vehicle selection.</strong> This is where my Porter case study focuses. Numbers are reconstructed from 20 survey responses and 3 interviews, not Porter analytics, so treat them as directional.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <div class="head">
+      <h2>Product work</h2>
+      <p>Each project shows the problem, the evidence, the decision, the metrics and a document you can read. The Porter and YouTube pieces are independent exercises. The Loop piece comes from real delivery work.</p>
+    </div>
+
+    <article class="case">
+      <span class="tag">Independent case study, not affiliated with Porter</span>
+      <h3>Porter: Building first-time goods transport confidence</h3>
+      <p class="kind">Research, personas, RICE prioritisation, PRD, metrics and rollout plan</p>
+      <div class="cols">
+        <dl>
+          <dt>Context and role</dt>
+          <dd>Independent capstone from a product management program. I was the sole author: research, synthesis, prioritisation, PRD, metrics and rollout plan.</dd>
+          <dt>Problem</dt>
+          <dd>First-time individual users struggle to turn "my sofa and fridge" into a vehicle choice and a final price. Target: raise successful first-trip completion from 41% to 58% within six months. The 41% baseline and the funnel are reconstructed from survey and interview self-reports, not Porter analytics, and the revenue example uses placeholder volumes.</dd>
+          <dt>Evidence</dt>
+          <dd>20 survey responses, 3 recorded interviews and app-review mining (23 interactions, directional rather than statistically definitive). Total price was the top concern (11 of 20), then extra charges (10 of 20), vehicle choice and fit (9 of 20) and driver reliability (6 of 20). Two personas: the Anxious First-Mover and the Control-Seeking Switcher.</dd>
+        </dl>
+        <dl>
+          <dt>Decision and trade-offs</dt>
+          <dd>Scored 12 ideas with RICE. Top two: a goods-based vehicle recommender (7.65) and a transparent all-in fare (6.56). I chose guidance over raw speed for first-timers, kept the pricing engine out of scope, and flagged driver reliability as the phase-2 candidate.</dd>
+          <dt>Plan and metrics</dt>
+          <dd>PRD scope for the MVP, six tracked events, and a four-cohort rollout (10%, 25%, 50%, 100%). North Star: successful first-trip completion. Guardrails: cancellations, rebooking after cancel, fare disputes and damage claims.</dd>
+          <dt>Risks I planned for</dt>
+          <dd>Wrong-size recommendations (bias conservative, easy upsize), slowing repeat users (skippable, off by default for them), a higher all-in fare scaring users (A/B test the framing), and cold start (rule-based first).</dd>
+          <dt>Prototype and outcome</dt>
+          <dd>A clickable rule-based recommender, "What Vehicle Do I Need?": goods input, vehicle recommendation with confidence and fit rationale, all-in fare, confirm and book. It runs in the browser with no backend and no real Porter pricing. This is a case study, not a launched product.</dd>
+        </dl>
+      </div>
+      <div class="links">
+        <a class="btn primary" href="Porter_Capstone_Deck.pdf">Open the 21-slide deck (PDF)</a>
+        <a class="btn ghost" href="https://admirable-semifreddo-8e3d66.netlify.app/">Try the working prototype</a>
+      </div>
+      <details>
+        <summary>Preview the deck on this page</summary>
+        <object data="Porter_Capstone_Deck.pdf" type="application/pdf"><p class="fallback">Your browser can't show the preview. <a href="Porter_Capstone_Deck.pdf">Open the PDF instead.</a></p></object>
+      </details>
+    </article>
+
+    <div class="pair">
+      <article class="small">
+        <span class="tag">Real product experience, sanitised</span>
+        <h3>Loop EV Charging: improving the charging start journey</h3>
+        <dl>
+          <dt>Context and role</dt>
+          <dd>Drawn from my work as iOS lead on an EV-charging app, with product, design and backend. No confidential screenshots, code, customer data or metrics.</dd>
+          <dt>Problem</dt>
+          <dd>Users could not tell whether a charger was available, whether the app could connect to it, or whether charging had actually started. Each failure created support requests or abandoned attempts.</dd>
+          <dt>Decision</dt>
+          <dd>A "Ready to Charge" journey: availability, charger details, connection readiness, start charging, charging confirmed. Ask for Bluetooth permission at the moment of need, not at launch. P0: make charging start reliable and observable. P1: permission and connection guidance. P2: discovery and repeat shortcuts.</dd>
+          <dt>Success metrics</dt>
+          <dd>Start-charging conversion, time from charger selection to confirmed charging, Bluetooth connection success rate, charging-start failure and support-contact rate, permission-denial recovery rate.</dd>
+          <dt>Outcome</dt>
+          <dd>A proposal and prioritisation, not a shipped result.</dd>
+        </dl>
+        <div class="links"><a class="btn ghost" href="Loop_EV_Charging_Product_Case_Study.pdf">Open the Loop case study (PDF, 1 page)</a></div>
+      </article>
+
+      <article class="small">
+        <span class="tag">Independent product metrics exercise</span>
+        <h3>YouTube: defining product success</h3>
+        <dl>
+          <dt>Context</dt>
+          <dd>An independent exercise in choosing metrics for a product I do not work on.</dd>
+          <dt>Problem</dt>
+          <dd>Raw watch time can rise through low-quality or addictive content, so it is a risky single goal.</dd>
+          <dt>Decision</dt>
+          <dd>North Star: meaningful watch sessions per active user. Supporting metrics: 7-day and 28-day retention, and creator success (satisfied supply rate).</dd>
+          <dt>Guardrails</dt>
+          <dd>Negative feedback and "not interested" signals, policy violation rates, recommendation diversity and creator concentration, session abandonment.</dd>
+          <dt>Experiment example</dt>
+          <dd>Test a ranking improvement on a defined cohort. Primary: meaningful watch sessions. Secondary: retention and satisfaction. Stop if guardrails regress.</dd>
+        </dl>
+        <div class="links"><a class="btn ghost" href="YouTube_Product_Metrics_Case_Study.pdf">Open the metrics case study (PDF, 1 page)</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="technical">
+  <div class="wrap">
+    <div class="head">
+      <h2>Technical depth I bring to product decisions</h2>
+      <p>I know what is feasible, what is risky and what it costs, because I have built and shipped it.</p>
+    </div>
+    <div class="tech">
+      <div><h3>APIs and integrations</h3><p>Partnered with engineering to optimise API integration, <b>reducing errors by 15%</b> and improving reliability metrics (NoblQ).</p></div>
+      <div><h3>Performance at scale</h3><p>Cut load times <b>by 22%</b> while supporting 5,000+ concurrent users in a live environment (Virtusa).</p></div>
+      <div><h3>Offline-first design</h3><p>Built offline functionality with Core Data, <b>lifting NPS by 10%</b> in low-connectivity regions (Virtusa).</p></div>
+      <div><h3>Quality and release discipline</h3><p>Sustained a <b>97% crash-free rate for 3 years</b> through bug triage and hotfixes; reduced crash rates by 40% at Smacar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="head">
+      <h2>Experience</h2>
+      <p>Twelve years in iOS product delivery, from developer to team lead.</p>
+    </div>
+    <ol class="xp">
+      <li>
+        <div class="when">January 2025 – September 2025<br>Chennai</div>
+        <div>
+          <h3>Team Lead</h3><p class="org">NoblQ Pvt. Ltd.</p>
+          <ul>
+            <li>Defined the product roadmap and prioritised features from user research, accelerating delivery by 20% across 5+ client projects.</li>
+            <li>Facilitated requirements workshops that turned business needs into scalable solutions, reducing change requests by 25%.</li>
+            <li>Led incident response and rapid bug resolution: 98% application uptime and customer satisfaction up 8 points, for 35,000+ users.</li>
+            <li>Mentored 8+ team members.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">November 2020 – August 2024<br>Chennai</div>
+        <div>
+          <h3>iOS Lead Developer</h3><p class="org">Virtusa Consulting Services Pvt. Ltd.</p>
+          <ul>
+            <li>Drove feature planning aligned with business objectives across seven major releases, with a 22% rise in user satisfaction.</li>
+            <li>Designed and validated user interfaces, increasing engagement by 25% and reducing support tickets by 18%.</li>
+            <li>Delivered performance upgrades (load times down 22%) and sustained a 97% crash-free rate across 3 years.</li>
+            <li>Implemented offline functionality with Core Data, lifting NPS by 10% in low-connectivity regions. Mentored 9 developers.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">September 2017 – March 2020<br>Chennai</div>
+        <div>
+          <h3>Lead iOS Developer</h3><p class="org">Smacar Solutions Pvt. Ltd.</p>
+          <ul>
+            <li>Led lifecycle management for 3 B2B mobile products, prioritising roadmaps and supporting 40,000+ active users.</li>
+            <li>Coordinated stakeholder input to define high-impact features, using user and revenue analytics.</li>
+            <li>Drove adoption through iterative releases: retention up 35% within 24 months and revenue up 18%.</li>
+            <li>Directed performance optimisation, reducing crash rates by 40% and support response times by 25%.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">October 2016 – July 2017<br>Chennai</div>
+        <div>
+          <h3>Senior iOS Developer</h3><p class="org">Capital Numbers Infotech Pvt. Ltd.</p>
+          <ul>
+            <li>Gathered requirements with clients and PMs and launched two enterprise applications with on-time go-lives.</li>
+            <li>Designed user-centric interfaces, improving user satisfaction by 30% and simplifying onboarding. Reduced post-release defects by 15% through service integration testing.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">December 2015 – September 2016<br>Chennai</div>
+        <div>
+          <h3>iOS Developer</h3><p class="org">Agaram Infotech Pvt. Ltd.</p>
+          <ul>
+            <li>Defined MVP scope with stakeholders for two new apps, enabling on-time launches.</li>
+            <li>Built modular app features that improved release velocity by 12%.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">June 2013 – December 2015<br>Chennai, Tamil Nadu</div>
+        <div>
+          <h3>iOS Developer</h3><p class="org">Raka Tech</p>
+          <ul>
+            <li>Worked with cross-functional teams to define requirements so MVP launches were market-ready.</li>
+            <li>Improved user flows with UI/UX collaboration, raising first-time user retention to 85%.</li>
+            <li>Enabled offline capabilities, a 25% uptick in adoption in connectivity-challenged regions; sustained 95% stability across the iOS portfolio.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+    <div class="links"><a class="btn primary" href="Fathima_Babuji_Resume.pdf">Download the full resume (PDF)</a></div>
+  </div>
+</section>
+
+<section id="shipped">
+  <div class="wrap">
+    <div class="head">
+      <h2>Products I shipped</h2>
+      <p>Real delivery work, seen through a product lens.</p>
+    </div>
+    <ul class="shipped">
+      <li><h3>Carbon Tracking App</h3><p>B2B carbon insights tool with secure bank linking. I led delivery as iOS lead. It grew adoption by 30% in the B2B segment through user-centric features and won the Sustainability App Award.</p></li>
+      <li><h3>Loop EV Charging Network App</h3><p>SwiftUI, Combine, BLE. Helps drivers find charging stations, check real-time charger availability and start charging sessions. I led iOS delivery.</p></li>
+      <li><h3>Hybrid Hero</h3><p>iOS, QR code, Google G Suite, Microsoft 365. Workplace app for workspace and meeting-room booking, QR check-in, health screening, capacity management and calendar integrations.</p></li>
+      <li><h3>Concordia</h3><p>iOS, Core Data, real-time APIs. Cryptocurrency trading app for Standard Chartered Bank: buy, sell, send, transaction history and portfolio monitoring, with offline data handling.</p></li>
+      <li><h3>Gaadi Bazaar</h3><p>Digital marketplace for auto buyers and partners with loans and insurance integrated. Grew to 10,000+ users in six months through targeted feature expansion.</p></li>
+      <li><h3>CPMobile by NCR</h3><p>iOS retail app integrated with Counterpoint POS for real-time sales management. 95% user satisfaction and 22% higher sales closure rates for field teams.</p></li>
+      <li><h3>More on request</h3><p>xGuardian, Zoopon and others. Details and walkthroughs are available in an interview, without confidential material.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <h2>From engineering leadership to product management</h2>
+        <p>I bring a strong technical foundation from iOS development and team leadership: requirements gathering, workflow design, cross-functional delivery, quality, release management and solving user-facing problems.</p>
+        <p>My move into product management adds structured discovery, user research, prioritisation, strategy, metrics, experimentation and roadmap thinking to that foundation. I am Airtribe-certified as a GenAI Product Manager.</p>
+      </div>
+      <ul class="skills">
+        <li><b>Discovery</b><span>Research, interviews, synthesis</span></li>
+        <li><b>Strategy</b><span>Problem framing, prioritisation, PRD</span></li>
+        <li><b>Delivery</b><span>Agile, cross-functional leadership</span></li>
+        <li><b>Analytics</b><span>North Star, funnels, guardrails</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills">
+  <div class="wrap">
+    <div class="head"><h2>Skills and tools</h2></div>
+    <dl class="skillgrid">
+      <dt>Product and project management</dt><dd>Jira, Asana, Trello</dd>
+      <dt>Analytics and roadmapping</dt><dd>Google Analytics, Tableau, Productboard</dd>
+      <dt>Prototyping and UI/UX</dt><dd>Figma, Adobe XD, Sketch</dd>
+      <dt>Languages and frameworks</dt><dd>Objective-C, Swift, SwiftUI, SQLite (iOS), Core Data</dd>
+      <dt>Mobile and cloud</dt><dd>iOS SDK, Xcode, Counterpoint POS, Vuforia, Combine</dd>
+      <dt>CI/CD and deployment</dt><dd>App Store deployment, CI/CD pipelines, Fastlane</dd>
+      <dt>API and data integration</dt><dd>REST APIs, web services integration</dd>
+    </dl>
+    <div class="facts" style="margin-top:48px">
+      <div><h3>Education</h3><p>B.Tech, SVCET, 2012</p></div>
+      <div><h3>Certification</h3><p>GenAI Product Manager, Airtribe</p></div>
+      <div><h3>Honors and awards</h3>
+        <ul>
+          <li>Outstanding Contribution Award for leading cross-functional teams in launching 5+ iOS products used by 100,000+ users.</li>
+          <li>Sustainability App Award for the Carbon Tracking App.</li>
+          <li>Recognised for steering the Tamilnadu Cricket App: 25% engagement growth and roadmap delivery 20% faster.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="wrap">
+    <div class="head"><h2>How I work: problem, evidence, decision, outcome</h2></div>
+    <ol class="steps">
+      <li><h3>Understand</h3><p>Clarify users, business goals and the real problem before jumping to solutions.</p></li>
+      <li><h3>Validate</h3><p>Use research, data and constraints to separate assumptions from evidence.</p></li>
+      <li><h3>Prioritise</h3><p>Compare impact, confidence, effort and strategic fit to choose what to solve first.</p></li>
+      <li><h3>Measure</h3><p>Define success metrics, guardrails and learning loops before launch.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Open to technical product manager roles</h2>
+    <p class="lede">I am looking for roles where technical depth, customer understanding and cross-functional leadership come together.</p>
+    <div class="btns" style="margin-top:20px">
+      <a class="btn primary" href="mailto:Fathimababuji1990@gmail.com">Email me</a>
+      <a class="btn ghost" href="Fathima_Babuji_Resume.pdf">Download resume (PDF)</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/fathima-babuji-a22aba380/">View LinkedIn profile</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Fathima Babuji. Case studies marked independent are not affiliated with the companies they discuss.</div>
+</footer>
+
+</body>
+</html>
